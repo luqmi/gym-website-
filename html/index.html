@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: none;
+        background-image: url(./imgs/gym.jpeg);
+    }
+    .left{
+
+        width: 10%;
+        height: 45px;
+        /* border: 2px solid black; */
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        width: 15%;
+    }
+    .left img{
+        display: block;
+        width: 25px;
+        margin: 2px auto;
+    }
+    .left div{
+        font-weight: 900;
+        font-size: large;
+        color: rgb(45, 4, 16);
+       font-family: Arial, Helvetica, sans-serif;
+       text-align: center;
+       
+    }
+    .left div:hover{
+        color: rgb(101, 34, 164);
+cursor: pointer;
+    }
+    .mid{
+        display: block;
+        margin: 10px auto;
+        width: 30%;
+        /* border: 2px solid yellow; */
+    }
+    .mid .navbar{
+        display: inline-block;
+    }
+    .mid .navbar li{
+        
+        display: inline-block;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: larger;
+        padding: 0px 10px;
+        
+    }
+    .mid .navbar li a{
+        color: purple;
+        text-decoration: none;
+    }
+    .mid .navbar li a:hover{
+       color: rgb(87, 9, 32);
+       text-decoration: underline;
+    }
+    .right{
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        width: 14%;
+        /* border: 2px solid yellowgreen; */
+    }
+    .btn{
+        border-radius: 5px;
+        padding: 5px;
+        border: none;
+        color: aliceblue;
+        background: rgb(148, 37, 144);
+    margin: 0px 10px;
+    }
+    .btn:hover{
+        background: rgb(73, 15, 63);
+    }
+    .container{
+        display: block;
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        width: 33%;
+        padding: 10px;
+        border: 2px solid black;
+        background: rgb(5, 73, 94);
+    }
+     .group input{
+  display: block;
+  text-align: center;
+  width: 250px;
+  margin: 5px auto;
+  border-radius: 5px;
+  font-size: 20px;
+    }
+    .container h1{
+        color: white;
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width:250px;
+        margin: 10px auto;
+        border-radius: 5px;
+  font-size: 20px;
+    }
+</style>
+
+
+<body>
+<div class="header">
+    <div class="left">
+        <img src="./imgs/logo.png" alt="">
+       <div>Luqman khan</div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">join Fitness</a></li>
+            <li><a href="#">Go to</a></li>
+        </ul>
+    </div>
+    <div class="right">
+<button class="btn">call us</button>
+<button class="btn">Email Us</button>
+    </div>
+</div>   
+
+
+<div class="container">
+    <h1>join he best gym of Baldia</h1>
+    <form action="no action">
+        <div  class="group">
+            <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="group">
+            <input type="text" placeholder="Enter your Age">
+        </div>
+        <div class="group">
+            <input type="text" placeholder="Enter your Email">
+        </div>
+        <div class="group">
+            <input type="text" placeholder="Enter your Address">
+        </div>
+    </form>
+    <button class="btn">Submit</button>
+</div>
+</body>
+</html>
